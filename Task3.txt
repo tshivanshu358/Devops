@@ -1,0 +1,46 @@
+Tasks To Be Performed:
+1. Create a Git working directory, with the following branches:
+● Develop
+● F1
+● f2
+2. In the master branch, commit main.txt file
+3. Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively
+4. Push all these branches to GitHub
+5. On local delete f2 branch
+6. Delete the same branch on GitHub as well
+
+Solution:-
+
+1. mkdir git_task3
+   cd git_task3
+   vi main.txt
+   git add main.txt
+   git commit -m "committed main.txt in master"
+   git branch develop
+   git branch f1
+   git branch f2
+
+3. git checkout develop
+   ls -ltra
+   vi develop.txt
+   git add develop.txt
+   git commit -m "committing develop file in develop branch"
+   git checkout f1
+   vi f1.txt
+   git add f1.txt
+   git commit -m "committing f1.txt file in f1 branch"
+   git checkout f2
+   vi f2.txt
+   git add f2.txt
+   git commit -m "committing f2.txt file in f2 branch"
+
+4. git checkout master
+   git remote add origin URL
+   git push origin master
+   git push origin develop
+   git push origin f1
+   git push origin f2
+   ls -ltra
+5. git checkout master
+   git   
+   
